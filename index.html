@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<title>dab.123</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    overflow:hidden;
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top,#111 0%,#050505 60%);
+}
+
+.blur{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#1f4fff33;
+    filter:blur(120px);
+    border-radius:50%;
+    animation:float 6s ease-in-out infinite;
+}
+
+.blur2{
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#ffffff10;
+    filter:blur(100px);
+    border-radius:50%;
+    right:-100px;
+    bottom:-100px;
+}
+
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0px);}
+}
+
+.card{
+    position:relative;
+    width:340px;
+    padding:35px;
+    border-radius:28px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,0,0,0.4);
+    z-index:5;
+}
+
+.avatar{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid rgba(255,255,255,0.1);
+    margin-bottom:18px;
+}
+
+h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.tag{
+    color:#8f8f8f;
+    margin-top:6px;
+    font-size:14px;
+}
+
+.bio{
+    margin-top:18px;
+    color:#cfcfcf;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.links{
+    margin-top:28px;
+}
+
+.links a{
+    display:block;
+    margin-top:12px;
+    padding:14px;
+    border-radius:16px;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.25s;
+    font-weight:600;
+}
+
+.links a:hover{
+    transform:translateY(-2px);
+    background:rgba(255,255,255,0.1);
+}
+
+.footer{
+    margin-top:22px;
+    color:#666;
+    font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<div class="card">
+
+<img class="avatar"
+src="https://i.imgur.com/6VBx3io.jpeg">
+
+<h1>dab.123</h1>
+
+<div class="tag">@dab.123</div>
+
+<div class="bio">
+discord user<br>
+content creator
+</div>
+
+<div class="links">
+
+<a href="https://discord.com">
+Discord</a>
+
+<a href="https://youtube.com">
+YouTube</a>
+
+<a href="https://tiktok.com">
+TikTok</a>
+
+</div>
+
+<div class="footer">
+made by hassin
+</div>
+
+</div>
+
+</body>
+</html>
